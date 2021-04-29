@@ -4,10 +4,10 @@ const UNSPLASH_API_KEY = "qj7dzHsl9c4JwJRBlshnyjsFQechd9tsVoBpoG8_D0k";
 // UNSPLASH_URL
 const UNSPLASH_URL = `https://api.unsplash.com/photos/randoms/?client_id=${UNSPLASH_API_KEY}&query=landscape&orientation=landscape`;
 
-const body = document.querySelector("body");
 const locationContainer = document.querySelector(
   ".js-location .location__text"
 );
+const body = document.querySelector("body");
 
 function loadBackground() {
   // get image from Local Storage
@@ -57,10 +57,24 @@ function saveBackground(imageUrl, city, country, name) {
   };
   //Set to Local Storage wit JSON strng
   localStorage.setItem("background", JSON.stringify(imageObject));
-
-  //reload
   loadBackground();
+
   return;
+}
+
+function paintOfflineImage(imgNumber) {
+  const image = new Image();
+  // image.src = `./images/1.jpg`;
+  image.src = `./images/${imgNumber + 1}.jpg`;
+  image.classList.add("bgImage");
+  body.appendChild(image);
+}
+
+function genRandom() {
+  const body = document.querySelector("body");
+  const IMAGES_NUMBER = 5;
+  const number = Math.floor(Math.random() * IMAGES_NUMBER);
+  return number;
 }
 
 function getBackground() {
@@ -79,10 +93,14 @@ function getBackground() {
 
         saveBackground(imageUrl, city, country, name);
       } else {
-        // console.log("getBackground ERROR ?");
+        console.log("getBackground ERROR or Offline  ?");
 
-        //Recursion
-        getBackground();
+        //1. Online ,Recursion
+        // getBackground();
+
+        //2. Offline
+        const randomNumber = genRandom();
+        paintOfflineImage(randomNumber);
       }
     });
   return;
