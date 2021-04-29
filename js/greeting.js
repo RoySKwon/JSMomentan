@@ -45,7 +45,7 @@ function askName() {
 function loadName() {
   const userName = localStorage.getItem("username");
 
-  //   console.log("userName:", userName); //checking User
+  console.log("userName:", userName); //checking User
 
   if (userName === null) {
     // userName이 없으면 등록
