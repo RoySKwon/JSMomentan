@@ -1,7 +1,8 @@
 const nameContainer = document.querySelector(".js-name");
 
 function paintName(acountName) {
-  //   nameContainer.innerHTML = "";//wofuer
+  //user name 입력후에, name입력창 안보이게
+  nameContainer.innerHTML = "";
 
   // HTML span 만들고 name 을 innerHTML로 할당후  appendChild
   const title = document.createElement("span");
@@ -12,7 +13,7 @@ function paintName(acountName) {
 }
 
 function handleSubmit(event) {
-  //   event.preventDefault();
+  event.preventDefault();
 
   const form = event.target;
   const input = form.querySelector("input");
