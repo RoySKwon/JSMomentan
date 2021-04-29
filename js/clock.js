@@ -12,7 +12,7 @@ function getTime() {
     minutes < 10 ? `0${minutes}` : minutes
   }`;
 
-  console.log(time);
+  // console.log(time); // checking  time
   clock.innerHTML = time;
   return;
 }
