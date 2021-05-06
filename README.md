@@ -1,4 +1,4 @@
-#3 JavaScript Momentan
+# Browser App  Momentan  with only JavaScript 
 
 - [x] User Name Input / Save(Local Storage)
 - [x] Weather Infomation
