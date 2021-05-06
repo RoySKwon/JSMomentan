@@ -1,6 +1,4 @@
-# JSMomentan
-
-# Heading 1
+# JavaScript Momentan 2 
 
 - [x] User Name Input / Save(Local Storage)
 - [x] Weather Infomation
