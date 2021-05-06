@@ -1,4 +1,4 @@
-# JavaScript Momentan 2 
+#3 JavaScript Momentan
 
 - [x] User Name Input / Save(Local Storage)
 - [x] Weather Infomation
