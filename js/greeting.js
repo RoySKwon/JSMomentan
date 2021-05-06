@@ -60,7 +60,6 @@ function loadName() {
 
 function init() {
   loadName();
-  return;
 }
 
 init();

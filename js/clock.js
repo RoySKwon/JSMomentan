@@ -21,7 +21,6 @@ function init() {
   //   debugger;
   getTime();
   setInterval(getTime, 1000);
-  return;
 }
 
 init();

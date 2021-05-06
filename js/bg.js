@@ -108,7 +108,6 @@ function getBackground() {
 
 function initApp() {
   loadBackground();
-  return;
 }
 
 initApp();

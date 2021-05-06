@@ -12,7 +12,7 @@ function getWeather(coords) {
     .then((json) => {
       const name = json.name;
       const temperature = json.main.temp;
-      weather.innerHTML = `${Math.floor(temperature)}°C @ ${name}`;
+      weather.innerHTML = `${Math.floor(temperature)}°C 📌 ${name}`;
     });
   return;
 }
@@ -55,8 +55,6 @@ function loadWeather() {
 
 function init() {
   loadWeather();
-
-  return;
 }
 
 init();
