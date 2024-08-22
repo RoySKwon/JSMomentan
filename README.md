@@ -1,4 +1,5 @@
-# Browser App  Momentan  with only JavaScript 
+# jsMomentum Version 2
+## Browser App  Momentan  with only JavaScript 
 
 - [x] User Name Input / Save(Local Storage)
 - [x] Weather Infomation
